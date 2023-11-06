@@ -13,4 +13,4 @@ jobs:
         uses: cypress-io/github-action@v6
         # To run script only
         with:
-            commamd: npm run run:EliteAssure
+            command: npm run run:EliteAssure
