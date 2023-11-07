@@ -1,0 +1,22 @@
+name: Sanity Build with Report
+on: push
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    steps:
+      # To fetch the code which is available in github report so this will checkout all code
+      - name: Checkout
+        uses: actions/checkout@v4  
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run   
+        uses: cypress-io/github-action@v6
+        # To run script only
+        with:
+            command: npm run run:EliteAssure
+
+      - name: Save build folder
+        uses: actions/upload-artifact@v3
+        with:
+            name: Mochawesome HTML Report
+            path: cypress/reports/html
