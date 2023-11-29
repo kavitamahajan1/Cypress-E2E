@@ -7,7 +7,7 @@ const quoteObj = new quickQuote();
 import AWGData from '../../fixtures/AssuredWealthGoalData.json'
 
 describe('Test Assured Wealth Goal Plan', ()=>{
-    it('AWG Plan Testcase1',()=>{
+    it('AWG Plan Testcase1: with all mandatory details',()=>{
         productObj.openURL()
         productObj.selectAssuredWealthGoalPlan(AWGData.Planname)
         quoteObj.selectTitle(AWGData.Title)
@@ -38,7 +38,7 @@ describe('Test Assured Wealth Goal Plan', ()=>{
         quoteObj.clickBackBtn()
     })
 
-    it('AWG Plan Testcase3 : with addons',()=>{
+    it('AWG Plan Testcase3 : without mandatory field value',()=>{
         productObj.openURL()
         productObj.selectAssuredWealthGoalPlan(AWGData.Planname)
         quoteObj.selectTitle(AWGData.Title)

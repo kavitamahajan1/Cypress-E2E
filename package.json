@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "run:allPlans":"npm cypress run",
     "run:EliteAssure": "npx cypress run --spec cypress/e2e/Tests/EliteAssureTest.cy.js",
     "run:AssuredWealthGoalPlan": "npx cypress run --spec cypress/e2e/Tests/AssuredWealthGoalPlanTest.cy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
