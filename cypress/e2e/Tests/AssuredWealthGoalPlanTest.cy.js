@@ -38,5 +38,21 @@ describe('Test Assured Wealth Goal Plan', ()=>{
         quoteObj.clickBackBtn()
     })
 
+    it('AWG Plan Testcase3 : with addons',()=>{
+        productObj.openURL()
+        productObj.selectAssuredWealthGoalPlan(AWGData.Planname)
+        quoteObj.selectTitle(AWGData.Title)
+        quoteObj.enterFirstName(AWGData.Firstname)
+        quoteObj.enterLastName(AWGData.Lastname)
+        quoteObj.enterMobileNo(AWGData.MobileNo)
+        //quoteObj.enterEmail(AWGData.Email)
+        quoteObj.addonsSelection(AWGData.SA)
+        quoteObj.clickCalculate()  
+        quoteObj.enterSMICName(AWGData.SMICName)
+        quoteObj.enterSMContactNo(AWGData.SMICContact)
+        quoteObj.clickSubmit()
+        quoteObj.clickBackBtn()
+    })
+
 
 })
