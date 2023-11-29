@@ -14,9 +14,9 @@ jobs:
         # To run script only
         with:
             command: npm run run:EliteAssure
-
       - name: Save build folder
         uses: actions/upload-artifact@v3
         with:
             name: Mochawesome HTML Report
             path: cypress/reports/html
+            

@@ -60,6 +60,11 @@ export class quickQuote{
         cy.get(this.weblocators.SubmitBtn).click();
        // cy.wait(10000)
     }
+
+    addonsSelection(sa){
+        cy.get('#check_yes70006').click();
+        cy.get('#rSA70006').type(sa);
+    }
     
     // clickBackBtn(){
     //     cy.get(this.weblocators.BackBtn).each((ele)=>{
