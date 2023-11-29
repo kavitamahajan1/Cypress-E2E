@@ -13,7 +13,7 @@ jobs:
         uses: cypress-io/github-action@v6
         # To run script only
         with:
-            command: npm run run:EliteAssure
+            command: npm run run:AssuredWealthGoalPlan
       - name: Save build folder
         uses: actions/upload-artifact@v3
         with:
